@@ -29,8 +29,4 @@ def open():
 #create a button to control when to open a second window
 btn = Button(root, text = 'Open Second Window', command = open).pack()
 
-
-
-
-
 root.mainloop()
