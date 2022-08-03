@@ -19,3 +19,17 @@ win.columnconfigure(0, weight=1)
 win.rowconfigure(1, weight=0)
 
 win.mainloop()
+
+def test_finally(arg1, **kargs):
+    import os
+    try:
+        print ("this is try block")
+        if('name' in kargs):
+            print(kargs['name'])
+        else:
+            print("no name" + arg1)
+    except:
+        print("this is except block")
+    finally:
+        print("this is finally block")
+print(test_finally('namename'))

@@ -1,23 +1,24 @@
 from tkinter import *
 from PIL import ImageTk, Image
+from tkinter import messagebox
 
 root = Tk()
 root.title("Learn to code.")
 root.iconbitmap('./icon.ico')
 
-#this is tkinter variable to keep track what value it is corresponding to which radiobutton you clicked
-r = StringVar() #because i know I am using integer, I am using IntVar
-r.set("2")
-Radiobutton(root, text = "Option 1", variable = r, value = "11", command = lambda: clicked(r.get())).pack()
-Radiobutton(root, text = "Option 2", variable = r, value = "21", command = lambda: clicked(r.get())).pack()
-#test when you click a button, my label get changed
-def clicked(value):
-    global myLabel
-    myLabel.pack_forget()
-    myLabel = Label(root, text = r.get())
-    myLabel.pack()
-#show the value of a radio in a label
-myLabel = Label(root, text = r.get())
-myLabel.pack()
+def popup():
+    # messagebox.showinfo(title = 'This is my Popup.', message = 'Hello word')
+    # messagebox.showwarning(title = 'This is my Popup.', message = 'Hello word')
+    # messagebox.showerror(title = 'This is my Popup.', message = 'Hello word')
+    # messagebox.askquestion(title = 'This is my Popup.', message = 'Hello word')
+    response = messagebox.askyesno(title = 'This is my Popup.', message = 'Hello word')
+    print(response) #True when you click yes
+    if response:
+        Label(root, text = 'You Clicked Yes!').pack()
+    else:
+        Label(root, text = 'You Clicked No!').pack()
+#use a button to call the function
+Button(root, text = 'popup', command = popup).pack()
+
 
 root.mainloop()
