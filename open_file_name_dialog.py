@@ -12,7 +12,8 @@ def my_button():
     # #you need to define my_img as a global variable, otherwise the img wont show 
     global my_image
     #show what types file you want to who
-    root.filename = filedialog.askopenfilename(initialdir = "./Image", title = "select a file", filetypes = (("jpg file", "*jpeg"),("all file", "*.*")))
+    root.filename = filedialog.askopenfilename(initialdir = "./Image", title = "select a file", 
+    filetypes = (("jpg file", "*jpeg"),("all file", "*.*")))
     #show the returned filename
     my_label = Label(root, text = root.filename).pack()
     #show the image from this directory
