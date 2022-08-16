@@ -1,2 +1,2 @@
-# tkinter
-This is some practise for tkinter GUI
+# Building a Weather APP using Tkinter
+
