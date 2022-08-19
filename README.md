@@ -4,3 +4,5 @@
 Create a new window to update the sqlite database ![update](./Image/Update.png)
 
 Connect to an API for Weather data. ![Weather](./Image/Weather.png)
+
+A simple calculator. ![Calculator](./Image/Weather.png)
