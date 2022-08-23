@@ -59,14 +59,17 @@
 # print(obj1.current)
 # print(obj1.item)
 
-import threading
+# import threading
 
-class Example(threading.Thread):
+# class Example(threading.Thread):
 
-    def run(self):
-        print ('%s from %s' % (self._Thread__kwargs['example'],
-                              self.name))
+#     def run(self):
+#         print ('%s from %s' % (self._Thread__kwargs['example'],
+#                               self.name))
 
-example = Example(kwargs={'example': 'Hello World'})
-example.start()
-example.join()
+# example = Example(kwargs={'example': 'Hello World'})
+# example.start()
+# example.join()
+
+import sys
+print(sys.exit(0))
