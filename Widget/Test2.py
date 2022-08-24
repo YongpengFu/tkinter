@@ -71,5 +71,5 @@
 # example.start()
 # example.join()
 
-import sys
-print(sys.exit(0))
+print(bin(19))
+print(' '.join(format(ord(x), 'b') for x in "19"))

@@ -4,6 +4,7 @@ from PIL import ImageTk, Image
 root = Tk()
 root.geometry("400x400")
 
+
 #from where and to where
 vertical = Scale(root, from_ = 0, to = 200)
 vertical.pack()
